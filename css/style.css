@@ -1,1 +1,672 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+/* Main styling*/
+html, body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.7em;
+}
+a {
+    color: #333;
+    text-decoration: none;
+}
+h1, h2, h3 {
+    padding-bottom: 20px;   
+}
+p {
+    margin: 10px 0;
+}
+/* Utility classes*/
+.container {
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+.text-primary {
+    color: #f7c08a;
+}
+.lead {
+    font-size: 20px;
+}
+.btn {
+    display: inline-block;
+    font-size: 18px;
+    color: white;
+    background: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background: #f7c08a;
+    color: #333;
+}
+.btn-light {
+    background: #f4f4f4;
+    color: #333;
+}
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+.bg-primary {
+    background: #333;
+    color: #f7c08a;
+}
+/* Navbar */
+#navbar {
+    background: #333;
+    color: white;
+    overflow: auto;
+}
+#navbar a {
+    color: white;
+}
+#navbar h1 {
+    float: left;
+    padding-top: 20px;
+}
+#navbar ul {
+    display: flex;
+    list-style: none;
+    float: right;
+}
+#navbar ul li {
+    float: left;
+}
+#navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+}
+#navbar ul li a:hover {
+    background: #444;
+    color: #f7c08a;
+}
+/* Showcase*/
+#showcase {
+    background: url('../img/pexels-pixabay-258154.jpg') no-repeat center center/cover;
+    height: 600px;
+}
+#showcase .showcase-content {
+    color: #fff;
+    text-align: center;
+    padding-top: 170px;
+}
+#showcase .showcase content h1 {
+    font-size: 60px;
+    line-height: 1.2em;
+}
+#showcase .showcase content p {
+    padding: 20px;
+    line-height: 1.7em;
+}
+/* Home Info*/
+#home-info {
+    height: 400px;
+}
+#home-info .info-img {
+    float: left;
+    width: 50%;
+    background: url('../img/pexels-pasquale-de-felice-3820210-5663201.jpg')no-repeat center/cover; 
+    min-height: 100%;
+}
+#home-ifo .info-content {
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+#home-info .info-content p {
+    padding-bottom: 30px;
+}
+/* About info */
+#about-info .info-right {
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+#about-info .info-right img {
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+#about-info .info-left{
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
+
+/* Container for images*/
+.amenities-container{
+    background: #333;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+/*image styling*/
+.amenity-img {
+    display: block;
+    min-height: 100%;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+/* Room image*/
+.room img {
+    display: block;
+    margin: auto;
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+}
+.room-container{
+    justify-content: center;
+    background-color: #444;
+
+}
+
+/* Book now page*/
+ header {
+    background-color: #333;
+    color: #f7c08a;
+    justify-content: center;
+    text-align: center;
+}
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+/*Booking form container*/
+#booking-form {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+#booking-form .form {
+    display: flex;
+    flex-direction: column;
+}
+/* styling for form labels*/
+#booking-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+/* styling for form inputs*/
+#booking-form input,
+#booking-form select,
+#booking-form button {
+    padding: 10px;
+    width: 50%;
+    border: 1px #ddd solid;
+}
+/* Button styling*/
+#booking-form button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+#booking-form button:hover {
+    background-color: #f7c08a;
+}
+
+#booking-form {
+    padding: 15px;
+    
+}
+
+/* Contact Form*/
+#contact-form .form-group {
+    margin-bottom: 20px;
+}
+#contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+#contact-form input, 
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px #ddd solid;
+}
+#contact-form textarea {
+    height: 200px;
+}
+
+/* Footer*/
+#main-footer {
+    text-align: center;
+    background: #444;
+    color: white;
+    padding: 20px;
+}
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  #menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    #menu-toggle {
+      display: block;
+    }
+  
+    #nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+    }
+  
+    #nav-links.active {
+      display: flex;
+    }
+  
+    #nav-links li {
+      text-align: center;
+      padding: 10px;
+    }
+  
+    #nav-links li a {
+      color: white;
+      text-decoration: none;
+    }
+  }
+  .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .mySlide {
+    display: none;
+    text-align: center;
+  }
+  
+  .mySlide img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .mySlide h3 {
+    position: relative;
+    margin-top: -60px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+  }
+/* Slide buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Dots */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 5px 3px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  .slideshow-container {
+    margin-top: 80px; /* adjust depending on navbar height */
+    max-width: 100%;
+    overflow: hidden;
+  }
+  
+  
+  .roomSlide {
+    display: none;
+    text-align: center;
+  }
+/* Set a clear section for the "About" content */
+#about-info {
+    margin-top: 80px; /* Add some margin to prevent overlap with navbar */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background for about section */
+  }
+  
+  /* Container for About section */
+  #about-info .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Left side (text content) */
+  #about-info .info-left {
+    flex: 1;
+  }
+  
+  /* Right side (image content) */
+  #about-info .info-right {
+    flex: 1;
+  }
+  
+  #hotelImage {
+    width: 100%; /* Ensure the image fills its container */
+    height: auto;
+    max-height: 500px; /* Optional: limit image height to keep layout clean */
+    object-fit: cover;
+    transition: opacity 2s ease-in;
+  }
+  /* Ensure the footer is properly spaced from content */
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+
+  #main-footer {
+    background-color: #222;
+    color: #f4f4f4;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    border-top: 4px solid #e67e22;
+  }
+  
+  #main-footer p {
+    margin: 8px 0;
+  }
+  
+  #main-footer a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  #main-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 600px) {
+    #main-footer {
+      font-size: 13px;
+      padding: 20px 10px;
+    }
+  }
+
+
+/* Home Info Section Styling */
+#home-info {
+  display: flex;
+  background: #333;
+  color: #fff;
+  padding: 30px 0;
+  overflow: hidden;
+  align-items: center;
+}
+
+
+
+/* Text Content Side */
+.info-content {
+  flex: 1;
+  padding: 40px;
+}
+
+.info-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.info-content p {
+  line-height: 1.6;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* Responsive Fixes */
+@media (max-width: 768px) {
+  #home-info {
+    flex-direction: column;
+  }
+
+  .info-img {
+    height: 200px;
+  }
+
+  .info-content {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .info-content h2 {
+    font-size: 20px;
+  }
+
+  .info-content p {
+    font-size: 14px;
+  }
+}
+
+
+/* Default: Hide menu-icon and show full navbar on larger screens */
+#menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+  }
+
+  nav ul.showing {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .container {
+    position: relative;
+  }
+}
+
+
+.amenity-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.amenity-list li {
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.amenity-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.amenity-gallery img {
+  width: 30%;
+  min-width: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode header,
+.dark-mode nav,
+.dark-mode footer {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .btn,
+.dark-mode .btn-light {
+  background-color: #333;
+  color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+}
+
+/* Toggle Button Style */
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  color: #fff;
+}
+
+/* Default nav styles */
+#nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+/* Hide menu links by default on small screens */
+@media (max-width: 768px) {
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 200px;
+    padding: 10px;
+    z-index: 999;
+  }
+
+  #nav-links.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+}
+
+/* Show nav by default on larger screens */
+@media (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+
+  #nav-links {
+    display: flex !important;
+  }
+}
+
+
 
